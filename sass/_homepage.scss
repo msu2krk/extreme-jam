@@ -3,12 +3,22 @@ body{
 }
 
 .container{
-  min-height: 100vh;
-  opacity: 30%;
+  
+}
 
-
-  // background-color: azure;
+.background{
   background-image: url(/img/Extreme_Jam_logo.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:75%;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 15%;
+  min-height: 100vh;
 }
+
+@media (max-width: 500px) {
+   .background{
+    background-repeat: repeat-y;
+   }     
+  }
+
