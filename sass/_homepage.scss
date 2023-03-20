@@ -1,0 +1,14 @@
+body{
+  background-color: $mainBGcolor;
+}
+
+.container{
+  min-height: 100vh;
+  opacity: 30%;
+
+
+  // background-color: azure;
+  background-image: url(/img/Extreme_Jam_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
