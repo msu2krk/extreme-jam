@@ -1,0 +1,63 @@
+body {
+  background-color: $mainBGcolor;
+}
+
+
+
+.container {
+  min-height: 100vh;
+  justify-content: center;
+  // position: relative;
+}
+
+.bg-image {
+  display: block;
+  width: 80%;
+  margin-top: 20px;
+  margin-inline: auto;
+  opacity: 0.2;
+}
+
+.sponsors-component {
+  display: block;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+
+
+
+  & &__main-sponsor {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+
+  & &__sponsor {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+
+  & img {
+    height: 60px
+  }
+
+
+  & span {
+    color: $mainSponsorsColor;
+    font-size: 25px;
+  }
+}
+
+
+
+
+@media (max-width: 400px) {
+  .sponsors-component {
+    flex-direction: column;
+  }
+}

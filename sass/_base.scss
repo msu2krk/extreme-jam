@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: $mainFontFamily;
+}
+
 a {
     text-decoration: none;
 }
