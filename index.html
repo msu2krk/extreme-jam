@@ -44,7 +44,10 @@
 	</head>
 	<body>
 		<nav class="navigation-sidebar"></nav>
-		<section class="main">
+		<section
+			class="main"
+			id="home"
+		>
 			<div class="container">
 				<div class="main__description">
 					<img
@@ -60,13 +63,16 @@
 						nobis eius quo illo blanditiis accusamus nulla.
 						Impedit.</span
 					>
-					<div class="main__timer">do imprezy pozostało:</div>
 				</div>
-				<div class="main__data-place">
-					<ul>
-						<li>Data <span>23. lipca</span></li>
-						<li>Miejsce <span>Myślenice</span></li>
-					</ul>
+				<div class="main__where-when">
+					<p class="main__where">
+						<span>Myślenice Zarabie</span> 23. lipca
+					</p>
+					<p class="main__when">Start imprezy już za:</p>
+					<div
+						class="main__timer"
+						id="countdown"
+					></div>
 				</div>
 			</div>
 		</section>

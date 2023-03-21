@@ -8,27 +8,82 @@
 
 .main {
   background-image: url(/public/img/IMG_@karokrasinska_-44.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 75dvh;
+  padding: 0 70px 0 70px;
+  display: block;
+  display: flex;
 
-  & .container {
+  @media (max-width: 1100px) {
+    background-image: url(/public/img/IMG_@karokrasinska_-444.jpg);
+    height: 100dvh;
+  }
+
+  & h1 {
+    margin-bottom: 50px;
+  }
+
+
+
+  & &__where-when {
+    width: 60%;
+    border-radius: 5px;
+    background-color: $mainBoxBGcolor;
+    color: $mainBoxColor;
+    opacity: 0.8;
+
     display: block;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+
+    & p {
+      margin: 5px 0 5px 0;
+      font-weight: 700;
+    }
   }
 
   & &__description {
     padding-top: 80px;
     color: $mainBanerColor;
     width: 60%;
+    margin-bottom: 10px;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+      margin-bottom: 50px;
+      padding-top: 15px;
+    }
   }
 
-  & &__data-place {
-    margin-top: 200px;
-    background-color: #ffffff;
-    width: 250px;
-    height: 150px;
-    border-radius: 25px;
+  & &__timer {
+
+
+    width: 100%;
+    height: 40px;
+    border-radius-bottom: 10px;
+    background-color: $timerColor;
+    color: $mainBoxColor;
+
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+    & span {
+      background-color: $mainBoxBGcolor;
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 3px;
+      border-radius: 5px;
+    }
   }
 }
