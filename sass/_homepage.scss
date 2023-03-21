@@ -1,5 +1,5 @@
 .main {
-  background-image: url(img/IMG_@karokrasinska_-44.jpg);
+  background-image: url(/img/IMG_@karokrasinska_-44.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 75dvh;
@@ -9,7 +9,7 @@
   position: relative;
 
   @media (max-width: 1100px) {
-    background-image: url(img/IMG_@karokrasinska_-444.jpg);
+    background-image: url(/img/IMG_@karokrasinska_-444.jpg);
     height: 100dvh;
   }
 
