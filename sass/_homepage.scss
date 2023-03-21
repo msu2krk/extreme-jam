@@ -1,22 +1,15 @@
-.navigation-sidebar {
-  height: 100dvh;
-  width: max(60px, 6%);
-  background-color: #343434;
-  position: fixed;
-  position: absolute;
-}
-
 .main {
-  background-image: url(/public/img/IMG_@karokrasinska_-44.jpg);
+  background-image: url(img/IMG_@karokrasinska_-44.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 75dvh;
-  padding: 0 70px 0 70px;
+  // padding: 0 70px 0 70px;
   display: block;
   display: flex;
+  position: relative;
 
   @media (max-width: 1100px) {
-    background-image: url(/public/img/IMG_@karokrasinska_-444.jpg);
+    background-image: url(img/IMG_@karokrasinska_-444.jpg);
     height: 100dvh;
   }
 
@@ -28,10 +21,13 @@
 
   & &__where-when {
     width: 60%;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: $mainBoxBGcolor;
     color: $mainBoxColor;
     opacity: 0.8;
+    // margin-top: 100px;
+    position: absolute;
+    bottom: 45px;
 
     display: block;
     display: flex;
@@ -40,7 +36,9 @@
     text-align: center;
 
     @media (max-width: 1100px) {
-      width: 100%;
+      width: 95%;
+      // margin-top: 200px;
+
     }
 
     & p {
@@ -67,7 +65,8 @@
 
     width: 100%;
     height: 40px;
-    border-radius-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: $timerColor;
     color: $mainBoxColor;
 
@@ -77,6 +76,8 @@
     gap: 5px;
     align-items: center;
     justify-content: center;
+
+
 
     & span {
       background-color: $mainBoxBGcolor;
